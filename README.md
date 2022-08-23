@@ -7,6 +7,7 @@
 - 玩家的加入，退出等事件的自定义提示
 - 通过QQ群获取玩家列表 (计划)
 - 聊天禁言 (计划)
+- 敏感词屏蔽 (计划)
 2. ### 配置文件
 Cross Chat/config.yml    
 ````
@@ -34,3 +35,6 @@ servers:
       middlewares:
         <<: *default
 ````
+
+3. ### 命令
+````/crosschat reload   #重载配置文件````
