@@ -1,0 +1,13 @@
+join: "§8[§f§2+§f§8]§b %s"
+left: "§8[§f§2-§f§8]§b %s"
+change: "§b%s %2$s §8->§f %3$s"  #"1" is player, "2" is server the player come from and "3" is server the player came to
+chat: "§7[%2$s§7] %s: %3$s"      #"1" is player, "2" is server, "3" is sentence
+
+port: 8090                       #websocket server port, it should be same as CQ HTTP port
+simple_msg: true                 #when it enables, the plugin will not show any CQ codes in sentence, such as [Reply], [At]
+filter:                          #the sentence will be blocked if it fit these rules
+  - "!!.*"
+  - "/.*"
+groups:
+  §9QQ§f: 1145149528
+
