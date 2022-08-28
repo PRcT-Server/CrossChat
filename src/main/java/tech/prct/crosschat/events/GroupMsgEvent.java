@@ -15,7 +15,7 @@ public class GroupMsgEvent extends Event {
         }
 
         JsonElement message = main.config.getBoolean("simple_msg") ? json.get("raw_message"):json.get("message");
-        String msg = message.getAsString().replaceAll("\\[CQ:.*?,file=.*?]", "");
+        String msg = message.getAsString().replaceAll("\\[CQ:.*?]", "");
         if(msg.isEmpty()){
             return;
         }
